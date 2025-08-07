@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juan Guzmán - Currículum</title>
+    <!-- Tailwind CSS para un diseño rápido y moderno -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts: Inter para una tipografía limpia -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <!-- Iconos para los detalles de contacto -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* Usar la fuente Inter como predeterminada */
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        /* Pequeño ajuste para que los saltos de página se vean bien al imprimir */
+        @media print {
+            body {
+                -webkit-print-color-adjust: exact;
+            }
+            .no-print {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+    <!-- Contenedor principal con márgenes y sombra -->
+    <div class="container mx-auto max-w-4xl p-6 sm:p-8 md:p-12 bg-white shadow-2xl rounded-lg my-8">
+
+        <!-- Encabezado: Nombre, Título y Contacto -->
+        <header class="flex flex-col sm:flex-row items-start sm:items-center justify-between border-b-2 border-gray-200 pb-6 mb-8">
+            <div>
+                <h1 class="text-4xl sm:text-5xl font-bold text-gray-900">JUAN GUZMÁN</h1>
+                <h2 class="text-xl sm:text-2xl font-medium text-blue-600 mt-1">Desarrollador de Software</h2>
+            </div>
+            <div class="mt-4 sm:mt-0 text-sm sm:text-right">
+                <a href="mailto:juansguzman@hotmail.com" class="flex items-center mt-2 text-gray-600 hover:text-blue-600">
+                    <i class="fas fa-envelope w-5 mr-2"></i>
+                    juansguzman@hotmail.com
+                </a>
+                <a href="tel:+50768620940" class="flex items-center mt-2 text-gray-600 hover:text-blue-600">
+                    <i class="fas fa-phone w-5 mr-2"></i>
+                    +507 6862-0940
+                </a>
+                <a href="https://www.linkedin.com/in/juansebastianguzman" target="_blank" class="flex items-center mt-2 text-gray-600 hover:text-blue-600">
+                    <i class="fab fa-linkedin w-5 mr-2"></i>
+                    LinkedIn
+                </a>
+                <p class="flex items-center mt-2 text-gray-600">
+                    <i class="fas fa-map-marker-alt w-5 mr-2"></i>
+                    Rio abajo, calle 11 y media, Panamá, Ciudad de Panamá
+                </p>
+            </div>
+        </header>
+
+        <!-- Cuerpo principal del currículum -->
+        <main>
+
+            <!-- Sección de Perfil Profesional -->
+            <section>
+                <h3 class="text-2xl font-bold text-gray-800 border-b-2 border-blue-500 pb-2 mb-4">Perfil Profesional</h3>
+                <p class="text-gray-700 leading-relaxed">
+                    Busco utilizar mi experiencia en desarrollo de software y trabajo en equipo para explorar el área de inteligencia artificial, enfocándome en ciencias cognitivas para la creación de herramientas avanzadas de interacción humano-computador.
+                </p>
+            </section>
+
+            <!-- Sección de Experiencia Laboral -->
+            <section class="mt-8">
+                <h3 class="text-2xl font-bold text-gray-800 border-b-2 border-blue-500 pb-2 mb-4">Experiencia Laboral</h3>
+                
+                <div class="mb-6">
+                    <div class="flex justify-between items-baseline">
+                        <h4 class="text-xl font-semibold text-gray-900">Programador de Software</h4>
+                        <p class="text-sm text-gray-600">Enero 2023 - Actualidad</p>
+                    </div>
+                    <p class="text-md text-gray-700 italic">EDUPAN | Ciudad de Panamá, Panamá</p>
+                    <ul class="list-disc list-inside mt-2 text-gray-700 space-y-1">
+                        <li>Realización de Quality Assurance (QA) en diversas aplicaciones web y moviles.</li>
+                        <li>Creación y mantenimiento de infraestructura de software a traves de GCP.</li>
+                        <li>Programación en JavaScript, Python y SQL para el desarrollo de funcionalidades.</li>
+                        <li>Impartición de capacitaciones técnicas a equipos y usuarios.</li>
+                    </ul>
+                </div>
+
+                <div class="mb-6">
+                    <div class="flex justify-between items-baseline">
+                        <h4 class="text-xl font-semibold text-gray-900">Desarrollador Web</h4>
+                        <p class="text-sm text-gray-600">Octubre 2020 - Marzo 2021</p>
+                    </div>
+                    <p class="text-md text-gray-700 italic">MELIUS | Bogota, Colombia</p>
+                    <ul class="list-disc list-inside mt-2 text-gray-700 space-y-1">
+                        <li>Desarrollo de aplicaciones web utilizando Ruby on Rails.</li>
+                        <li>Configuración de la lógica del backend y gestión de la manipulación de datos.</li>
+                    </ul>
+                </div>
+
+                <div class="mb-6">
+                    <div class="flex justify-between items-baseline">
+                        <h4 class="text-xl font-semibold text-gray-900">Digitador</h4>
+                        <p class="text-sm text-gray-600">Mayo 2018 - Enero 2019</p>
+                    </div>
+                    <p class="text-md text-gray-700 italic">PROINSA | Ciudad de Panamá, Panamá</p>
+                    <ul class="list-disc list-inside mt-2 text-gray-700 space-y-1">
+                        <li>Manejo y administración de bases de datos en Microsoft Access.</li>
+                        <li>Desarrollo de una página web informativa utilizando la plataforma Wix.</li>
+                    </ul>
+                </div>
+            </section>
+            
+            <!-- Sección de Habilidades -->
+            <section class="mt-8">
+                <h3 class="text-2xl font-bold text-gray-800 border-b-2 border-blue-500 pb-2 mb-4">Habilidades y Tecnologías</h3>
+                <div class="grid grid-cols-2 sm:grid-cols-3 gap-4">
+                    <div>
+                        <h4 class="font-semibold text-gray-800">Lenguajes</h4>
+                        <ul class="list-none text-gray-700">
+                            <li>C++</li>
+                            <li>JavaScript</li>
+                            <li>Java</li>
+                            <li>Python</li>
+                            <li>Ruby</li>
+                            <li>SQL (BigQuery)</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="font-semibold text-gray-800">Desarrollo Web</h4>
+                        <ul class="list-none text-gray-700">
+                            <li>Ruby on Rails</li>
+                            <li>HTML5</li>
+                            <li>CSS3</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="font-semibold text-gray-800">Aptitudes</h4>
+                        <ul class="list-none text-gray-700">
+                            <li>Lógica Algorítmica</li>
+                            <li>Excel (Intermedio-Avanzado)</li>
+                            <li>Trabajo en Equipo</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Sección de Educación y Tesis -->
+            <section class="mt-8">
+                <h3 class="text-2xl font-bold text-gray-800 border-b-2 border-blue-500 pb-2 mb-4">Formación Académica</h3>
+                <div class="mb-4">
+                    <h4 class="text-xl font-semibold text-gray-900">Licenciatura en Ingeniería en Sistemas y Conputación</h4>
+                    <p class="text-md text-gray-700 italic">Universidad Tecnológica de Panamá (UTP) | Ciudad de Panamá, Panamá</p>
+                    <p class="mt-2 text-gray-700"><span class="font-semibold">Tesis:</span> "Análisis, Diseño e Implantación de una Herramienta Experimental para Evaluar Protocolos de Ética en la Inteligencia Artificial".</p>
+                </div>
+            </section>
+
+            <!-- Sección de Certificaciones y Reconocimientos -->
+            <section class="mt-8">
+                <h3 class="text-2xl font-bold text-gray-800 border-b-2 border-blue-500 pb-2 mb-4">Certificaciones y Reconocimientos</h3>
+                <ul class="list-disc list-inside text-gray-700 space-y-1">
+                    <li>Web Developer Essentials (2023) - Linux Professional Institute (LPI)</li>
+                    <li>Security Essentials (2023) - Linux Professional Institute (LPI)</li>
+                    <li>Reconocimiento a la Investigación (2021) - UTP</li>
+                    <li>Certificado de Honor al Mérito (2021) - UTP</li>
+                    <li>Academic Course for IELTS (2018) - ETC, Nueva Zelanda</li>
+                </ul>
+            </section>
+
+            <!-- Idiomas -->
+            <section class="mt-8">
+                <h3 class="text-2xl font-bold text-gray-800 border-b-2 border-blue-500 pb-2 mb-4">Idiomas</h3>
+                 <ul class="list-disc list-inside text-gray-700 space-y-1">
+                    <li><span class="font-semibold">Español:</span> Nativo</li>
+                    <li><span class="font-semibold">Inglés:</span> Avanzado (leído, hablado), Intermedio-Avanzado (escrito)</li>
+                </ul>
+            </section>
+            
+            <!-- Referencias -->
+            <footer class="mt-8 text-center text-sm text-gray-500">
+                <p>Referencias disponibles a petición.</p>
+            </footer>
+
+        </main>
+
+    </div>
+
+</body>
+</html>
