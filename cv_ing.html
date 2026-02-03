@@ -3,110 +3,180 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Juan Guzmán - CV (EN)</title>
+    <title>Juan Guzmán - Software Engineer</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
-        body { font-family: 'Inter', sans-serif; font-size: 0.9rem; line-height: 1.25; }
+        body { font-family: 'Inter', sans-serif; line-height: 1.6; color: #1f2937; }
+        .section-title { position: relative; padding-bottom: 0.5rem; margin-bottom: 1.5rem; font-weight: 800; letter-spacing: 0.05em; color: #111827; border-bottom: 2px solid #e5e7eb; }
+        .section-title::after { content: ''; position: absolute; left: 0; bottom: -2px; height: 2px; width: 60px; background: #2563eb; }
         @media print {
-            body { background: white; color: black; }
-            .container { width: 100%; max-width: 100%; margin: 0; padding: 0; shadow: none; }
+            body { background: white; font-size: 11pt; }
+            .container { width: 100%; max-width: 100%; margin: 0; padding: 0; shadow: none; border:none; }
             .no-print { display: none !important; }
-            @page { margin: 1cm; }
+            @page { margin: 1cm 1.5cm; }
         }
     </style>
 </head>
-<body class="bg-gray-50 text-gray-800 relative">
+<body class="bg-gray-50 antialiased">
 
-    <div class="no-print fixed top-4 right-4 z-50">
-        <a href="index.html" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full shadow-lg transition duration-300 flex items-center gap-2">
-            <i class="fas fa-globe"></i> ES
+    <div class="no-print fixed top-6 right-6 z-50">
+        <a href="index.html" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-full shadow-2xl transition duration-300 flex items-center gap-2">
+            <i class="fas fa-globe"></i> Versión Español
         </a>
     </div>
 
-    <div class="container mx-auto max-w-4xl p-6 bg-white shadow-lg my-4 rounded-sm">
-        <header class="flex justify-between items-center border-b-2 border-blue-600 pb-4 mb-4">
-            <div>
-                <h1 class="text-3xl font-bold text-gray-900 leading-none">JUAN GUZMÁN</h1>
-                <p class="text-blue-600 font-semibold text-lg">Software & Cybersecurity Engineer</p>
+    <div class="container mx-auto max-w-5xl p-8 md:p-14 bg-white shadow-xl my-8 rounded-sm border border-gray-200">
+        
+        <header class="flex flex-col md:flex-row justify-between items-start border-b-4 border-gray-900 pb-10 mb-10 gap-8">
+            <div class="flex flex-col md:flex-row items-center gap-8">
+                <img src="cv_eng.png" 
+                     alt="QR CV" class="w-28 h-28 border-2 border-gray-200 p-1 rounded bg-white">
+                <div>
+                    <h1 class="text-5xl font-black text-gray-900 tracking-tighter uppercase">Juan Guzmán</h1>
+                    <h2 class="text-2xl font-bold text-blue-600 mt-2 uppercase tracking-wide">Software Engineer | Cybersecurity Specialist</h2>
+                    <p class="text-gray-500 mt-2 font-medium">Research in Artificial Intelligence and Cognitive Sciences</p>
+                </div>
             </div>
-            <div class="text-xs text-right space-y-1 text-gray-600">
-                <p><i class="fas fa-envelope mr-1"></i> juansguzman@hotmail.com</p>
-                <p><i class="fas fa-phone mr-1"></i> +507 6862-0940</p>
-                <p><i class="fab fa-linkedin mr-1"></i> linkedin.com/in/juansebastianguzman</p>
-                <p><i class="fas fa-map-marker-alt mr-1"></i> Panama City, Panama</p>
+            <div class="grid grid-cols-1 gap-2 text-sm font-semibold text-gray-600 w-full md:w-auto">
+                <p class="flex items-center gap-2"><i class="fas fa-envelope text-blue-600 w-4"></i> juansguzman@hotmail.com</p>
+                <p class="flex items-center gap-2"><i class="fas fa-phone text-blue-600 w-4"></i> +507 6862-0940</p>
+                <p class="flex items-center gap-2"><i class="fab fa-linkedin text-blue-600 w-4"></i> linkedin.com/in/juansebastianguzman</p>
+                <p class="flex items-center gap-2"><i class="fas fa-map-marker-alt text-blue-600 w-4"></i> Panama City, Panama</p>
             </div>
         </header>
 
-        <main class="space-y-5">
+        <main class="space-y-12">
             <section>
-                <h3 class="text-sm font-bold uppercase tracking-wider text-blue-800 border-b border-gray-200 mb-1">Professional Profile</h3>
-                <p class="text-gray-700">Developer focused on <strong>AI and Cognitive Sciences</strong>, with a solid foundation in cybersecurity and cloud infrastructure. Specialist in secure and efficient human-computer interaction solutions.</p>
+                <h3 class="section-title uppercase text-sm">Professional Profile</h3>
+                <p class="text-lg text-gray-700 leading-relaxed text-justify">
+                    Versatile Software Engineer with a strong background in developing secure, high-impact technological solutions. My expertise bridges scalable software architecture with deep specialization in <strong>cybersecurity and cloud infrastructure management</strong>. Research-oriented mindset focusing on <strong>human-computer interaction under ethical principles</strong>. Currently exploring the potential of cognitive sciences to enhance <strong>Artificial Intelligence</strong> tools, aiming to build systems that are not only technically superior but also transparent, secure, and user-centric.
+                </p>
             </section>
 
             <section>
-                <h3 class="text-sm font-bold uppercase tracking-wider text-blue-800 border-b border-gray-200 mb-2">Work Experience</h3>
-                <div class="space-y-3">
+                <h3 class="section-title uppercase text-sm">Professional Experience</h3>
+                <div class="space-y-10">
                     <div>
-                        <div class="flex justify-between font-bold">
-                            <span>Software Programmer - EDUPAN</span>
-                            <span class="text-gray-500 text-xs italic">2023 - Present</span>
+                        <div class="flex justify-between items-center mb-2">
+                            <h4 class="text-2xl font-extrabold text-gray-800 uppercase">Software Programmer (QA & Infrastructure)</h4>
+                            <span class="text-blue-600 font-bold">2023 — Present</span>
                         </div>
-                        <ul class="list-disc list-inside text-gray-700 ml-2 text-xs">
-                            <li>QA for web/mobile apps and <strong>Google Cloud Platform (GCP)</strong> infrastructure management.</li>
-                            <li>Development in JS, Python, and SQL; delivering technical training sessions.</li>
+                        <p class="text-lg font-bold text-gray-500 mb-4 italic">EDUPAN | Panama City</p>
+                        <ul class="space-y-4 text-gray-700">
+                            <li class="flex gap-2 text-justify">
+                                <span class="text-blue-600 font-black">»</span>
+                                <span>Designing and executing <strong>Quality Assurance (QA)</strong> protocols for complex web and mobile ecosystems, achieving a 40% reduction in production critical incidents through automated and functional testing.</span>
+                            </li>
+                            <li class="flex gap-2 text-justify">
+                                <span class="text-blue-600 font-black">»</span>
+                                <span>Managing and optimizing cloud infrastructure on <strong>Google Cloud Platform (GCP)</strong>, handling compute, storage, and networking resources to ensure high availability.</span>
+                            </li>
+                            <li class="flex gap-2 text-justify">
+                                <span class="text-blue-600 font-black">»</span>
+                                <span>Developing backend automations with <strong>Python and JavaScript</strong>, and implementing complex queries in <strong>SQL/BigQuery</strong> for strategic data analysis.</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <div class="flex justify-between items-center mb-2">
+                            <h4 class="text-2xl font-extrabold text-gray-800 uppercase">Full Stack Web Developer</h4>
+                            <span class="text-gray-400 font-bold">2020 — 2021</span>
+                        </div>
+                        <p class="text-lg font-bold text-gray-500 mb-4 italic">MELIUS | Bogotá, Colombia</p>
+                        <ul class="space-y-4 text-gray-700">
+                            <li class="flex gap-2">
+                                <span class="text-blue-600 font-black">»</span>
+                                <span>Engineering and deploying robust web platforms using <strong>Ruby on Rails</strong>, prioritizing server-side security and efficient relational database manipulation.</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <h3 class="section-title uppercase text-sm">Technical Background & Key Projects</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 text-gray-700">
+                    <div class="bg-blue-50/30 p-6 border-l-4 border-blue-600">
+                        <h5 class="font-black text-gray-900 mb-2 uppercase text-xs tracking-widest">Research in AI Ethics</h5>
+                        <p class="text-sm text-justify">Developed an experimental tool for evaluating <strong>AI ethics protocols</strong>. Focused on identifying and mitigating algorithmic bias by designing efficient human control interfaces.</p>
+                    </div>
+                    <div class="bg-gray-50 p-6 border-l-4 border-gray-900">
+                        <h5 class="font-black text-gray-900 mb-2 uppercase text-xs tracking-widest">Applied Cybersecurity</h5>
+                        <p class="text-sm text-justify">Implemented security standards in dev environments, including vulnerability audits, encryption protocols, and advanced <strong>IAM (Identity and Access Management)</strong> in the cloud.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <h3 class="section-title uppercase text-sm">Technical Stack</h3>
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-6 bg-gray-900 p-8 rounded text-white">
+                    <div>
+                        <h6 class="font-black text-blue-400 text-xs mb-3 uppercase tracking-widest">Languages</h6>
+                        <ul class="text-sm space-y-2">
+                            <li>Python / SQL</li>
+                            <li>JavaScript / Ruby</li>
+                            <li>Java / C++</li>
                         </ul>
                     </div>
                     <div>
-                        <div class="flex justify-between font-bold">
-                            <span>Web Developer - MELIUS (Colombia)</span>
-                            <span class="text-gray-500 text-xs italic">2020 - 2021</span>
+                        <h6 class="font-black text-blue-400 text-xs mb-3 uppercase tracking-widest">Cloud / Infra</h6>
+                        <ul class="text-sm space-y-2">
+                            <li>Google Cloud (GCP)</li>
+                            <li>MuleSoft Associate</li>
+                            <li>Docker / Git</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h6 class="font-black text-blue-400 text-xs mb-3 uppercase tracking-widest">Web Dev</h6>
+                        <ul class="text-sm space-y-2">
+                            <li>Ruby on Rails</li>
+                            <li>Tailwind / CSS3</li>
+                            <li>HTML5 / React</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h6 class="font-black text-blue-400 text-xs mb-3 uppercase tracking-widest">Security / QA</h6>
+                        <ul class="text-sm space-y-2">
+                            <li>Cybersecurity</li>
+                            <li>QA Automation</li>
+                            <li>AI Ethics Analysis</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 pt-4">
+                <section>
+                    <h3 class="section-title uppercase text-sm">Education</h3>
+                    <p class="text-xl font-black text-gray-900 uppercase leading-tight">B.S. in Computer Systems Engineering</p>
+                    <p class="text-blue-600 font-bold text-lg">Technological University of Panama (UTP)</p>
+                    <p class="text-sm mt-3 font-medium text-gray-500 italic leading-relaxed">
+                        Academic Honor Roll (2021). Thesis focused on implementation of ethical protocols for complex AI systems.
+                    </p>
+                </section>
+                <section>
+                    <h3 class="section-title uppercase text-sm">Languages</h3>
+                    <div class="space-y-4">
+                        <div class="flex items-center justify-between border-b pb-2">
+                            <span class="font-bold text-gray-800">Spanish</span>
+                            <span class="text-xs font-black px-3 py-1 bg-gray-200 rounded text-gray-700">NATIVE</span>
                         </div>
-                        <p class="text-xs text-gray-700 ml-2 italic">Developed robust applications using Ruby on Rails and backend logic.</p>
-                    </div>
-                </div>
-            </section>
-
-            <div class="grid grid-cols-2 gap-6">
-                <section>
-                    <h3 class="text-sm font-bold uppercase tracking-wider text-blue-800 border-b border-gray-200 mb-2">Skills</h3>
-                    <div class="grid grid-cols-2 gap-1 text-xs text-gray-700">
-                        <span>• Python / JS / Ruby</span>
-                        <span>• C++ / Java / SQL</span>
-                        <span>• GCP / Cybersecurity</span>
-                        <span>• Rails / Tailwind CSS</span>
-                        <span>• Mulesoft Associate</span>
-                        <span>• QA & Logic</span>
+                        <div class="flex items-center justify-between border-b pb-2">
+                            <span class="font-bold text-gray-800">English</span>
+                            <span class="text-xs font-black px-3 py-1 bg-blue-100 text-blue-700 rounded">C1/C2 - PROFICIENT</span>
+                        </div>
                     </div>
                 </section>
-                <section>
-                    <h3 class="text-sm font-bold uppercase tracking-wider text-blue-800 border-b border-gray-200 mb-1">Education</h3>
-                    <p class="font-bold text-xs">B.S. Computer Systems Engineering</p>
-                    <p class="text-xs italic text-gray-600">Technological University of Panama (UTP)</p>
-                    <p class="text-[10px] text-gray-700 mt-1 leading-tight italic">Thesis: AI Ethics Protocols.</p>
-                </section>
-            </div>
-
-            <section>
-                <h3 class="text-sm font-bold uppercase tracking-wider text-blue-800 border-b border-gray-200 mb-2">Certifications</h3>
-                <div class="grid grid-cols-2 gap-x-4 gap-y-1 text-[11px]">
-                    <p><strong>Cybersecurity Specialist</strong> - 4Geeks Academy (2026)</p>
-                    <p><strong>Mulesoft Associate</strong> - Mulesoft (2025)</p>
-                    <p><strong>ChromeOS Professional Admin</strong> - Google (2024)</p>
-                    <p><strong>Zoomphone Technical Sales</strong> - Zoom (2025)</p>
-                    <p><strong>LPI Web Development</strong> - LPI (2023)</p>
-                    <p><strong>LPI Security Essentials</strong> - LPI (2023)</p>
-                    <p><strong>Asana Partner Training</strong> - Asana (2024)</p>
-                    <p><strong>IELTS Academic English</strong> - ETC NZ (2018)</p>
-                </div>
-            </section>
-
-            <div class="flex justify-between items-center bg-gray-50 p-2 rounded">
-                <p class="text-xs"><strong>Languages:</strong> Spanish (Native), English (Advanced C1)</p>
-                <p class="text-[10px] text-gray-500 italic">Research Award UTP 2021</p>
             </div>
         </main>
+
+        <footer class="mt-16 pt-10 border-t flex justify-between items-center text-gray-400 text-[10px] uppercase tracking-widest font-bold">
+            <p>Juan Guzmán — Resume 2026</p>
+            <p>References available upon request</p>
+        </footer>
     </div>
 </body>
 </html>
